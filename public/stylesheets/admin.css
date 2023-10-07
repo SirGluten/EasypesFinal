@@ -1,0 +1,37 @@
+body {
+    background-color: #D8C4A7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #800000;
+}
+
+header .logo {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    margin-left: 0.5%;
+}
+
+.dividido{
+    display: flex;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+
+footer {
+    margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+/* boostraped css */
+
