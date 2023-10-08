@@ -1,0 +1,26 @@
+<div class="container" style="margin: 50px auto;">
+    <div class="row">
+        <div class="col">
+            <h4 class="mar-b15">Modificar noticia</h4>
+            <p >Titulo</p>
+            <form action="/admin/novedades/modificar" method="post">
+                <input type="hidden" name="id" value="{{novedad.id}}">
+                <div class="form-group" >
+                    <input type="text" name="titulo" placeholder="Titulo" value="{{novedad.titulo}}"
+                        class="form-control mar-b15">
+                </div>
+                <p >Subtitulo</p>
+                <div class="form-group" >
+                    <textarea placeholder="Subtitulo" class="form-control mar-b15"
+                        name="subtitulo" >{{novedad.subtitulo}}</textarea>
+                </div>
+                <p >Cuerpo</p>
+                <div class="form-group" >
+                    <textarea placeholder="Cuerpo" class="form-control mar-b15"
+                        name="cuerpo" >{{novedad.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+        </div>
+    </div>
+</div>

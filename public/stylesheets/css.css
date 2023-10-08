@@ -142,6 +142,7 @@ footer {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .expositor img {
@@ -159,6 +160,7 @@ footer {
     margin-left: 2%;
     margin-right: 5%;
     width: auto;
+    font-size:large;
 }
 
 /*pg Desayuno */
@@ -247,4 +249,8 @@ footer {
 .novedades {
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.mar-b15{
+    margin-bottom: 15px;
 }

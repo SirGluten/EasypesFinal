@@ -1,27 +1,11 @@
 <div class="noticias">
     <h2 style="padding: 1em;">Novedades</h2>
+    {{#each novedades}}
     <div class="novedades">
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit modi nihil,
-            aspernatur iure distinctio sequi facilis vel, illum quis sunt eum dolorum cumque quos accusamus id
-            quidem dignissimos velit.</p>
+        <h3>{{titulo}}</h3>
+        <h4>{{subtitulo}}</h4>
+        <p>{{cuerpo}}</p>
         <hr>
     </div>
-    <div class="novedades">
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit modi nihil,
-            aspernatur iure distinctio sequi facilis vel, illum quis sunt eum dolorum cumque quos accusamus id
-            quidem dignissimos velit.</p>
-        <hr>
-    </div>
-    <div class="novedades">
-        <h3>Titulo</h3>
-        <h4>Subtitulo</h4>
-        <p>Descripcion - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit modi nihil,
-            aspernatur iure distinctio sequi facilis vel, illum quis sunt eum dolorum cumque quos accusamus id
-            quidem dignissimos velit.</p>
-        <hr>
-    </div>
+    {{/each}}
 </div>
