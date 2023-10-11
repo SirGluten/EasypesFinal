@@ -160,17 +160,24 @@ footer {
     margin-left: 2%;
     margin-right: 5%;
     width: auto;
-    font-size:large;
+    font-size: large;
 }
 
 /*pg Desayuno */
 
-.main-contacto {
-    width: 80%;
-    margin: 0px;
+.main-contacto{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.columnas {
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    align-items: center;
 }
+
+
 
 .contactanos {
     font-size: 3em;
@@ -251,6 +258,35 @@ footer {
     padding-right: 2em;
 }
 
-.mar-b15{
+.mar-b15 {
     margin-bottom: 15px;
+}
+
+.mar-t30 {
+    margin-top: 30px;
+}
+
+/* _____________________________recetas________________________________________________-- */
+
+
+.holder-recetas {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+}
+
+.stext {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: larger;
+}
+
+.icono {
+    color: #000000;
+    line-height: 1em;
 }

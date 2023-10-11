@@ -15,6 +15,11 @@ var nosotrosRouter = require('./routes/nosotros');
 var noticiasRouter = require('./routes/noticias');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var desayunoRouter = require('./routes/desayuno');
+var almuerzoRouter = require('./routes/almuerzo');
+var meriendaRouter = require('./routes/merienda');
+var cenaRouter = require('./routes/cena');
+var postreRouter = require('./routes/postre');
 
 
 var app = express();
@@ -55,6 +60,11 @@ app.use('/nosotros', nosotrosRouter);
 app.use('/noticias', noticiasRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+app.use('/desayuno', desayunoRouter);
+app.use('/almuerzo', almuerzoRouter);
+app.use('/merienda', meriendaRouter);
+app.use('/cena', cenaRouter);
+app.use('/postre', postreRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

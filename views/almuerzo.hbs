@@ -1,0 +1,49 @@
+<div class="holder-recetas">
+    <h1>Almuerzo proximamente</h1>
+    <p>Encuentra recetas de almuerzos simples y sabrosas. Navega por nuestra selección fácil de preparar y disfruta de
+        comidas deliciosas sin complicaciones. ¡Descubre la simplicidad en cada bocado!</p>
+        
+</div>
+{{!novedades}}
+
+{{!Lista deshabilitada}}
+<div class="row invisible">
+    <div class="col-md-8">
+        <h3>Listado de Almuerzos</h3>
+    </div>
+    <div class="col-6 col-md-3 text-end">
+        <a href="{{!/admin/novedades/agregar}}#" class="btn btn-success">Nuevo <i class="fa fa-plus"></i></a>
+    </div>
+    {{!tabla de novedades}}
+    <div class="row" style="margin-top: 20px;">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!-- {{#each !novedades}}{{!cambiar esta parte para que procese bien}} --}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-center">
+                            {{!-- boton de editar --}}
+                            <a href="#{{!/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil"></i></a>
+                            {{!-- boton de eliminar --}}
+                            <a href="#{{!/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{!-- {{/each}} --}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+        
+</div>

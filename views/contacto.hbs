@@ -1,34 +1,54 @@
 <main class="main-contacto">
     <h2 style="text-decoration: underline;">Contactanos por:</h2>
-    <div class="columnas"></div>
+    <div class="columnas">
+        <div class="columna left">
+            <h2>Contacto Rápido</h2>
+            <form action="/contacto" method="post" class="formulario">
+                <p><label for="">Nombre</label>
+                    <input type="text" name="nombre" />
+                </p>
+                <p><label for="">Email</label>
+                    <input type="text" name="email" />
+                </p>
+                <p><label for="">Teléfono</label>
+                    <input type="text" name="tel" />
+                </p>
+                <p><label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </p>
+                <p class="acciones"><input type="submit" value="Enviar"></p>
+            </form>
+            <p>{{message}}</p>
+        </div>
+        <div class="columna right">
 
-    <p></p>
-    <div class="columna left">
-        <h2>Contacto Rápido</h2>
-        <form action="/contacto" method="post" class="formulario">
-            <p><label for="">Nombre</label>
-                <input type="text" name="nombre"/>
-            </p>
-            <p><label for="">Email</label>
-                <input type="text" name="email"/>
-            </p>
-            <p><label for="">Teléfono</label>
-                <input type="text" name="tel"/>
-            </p>
-            <p><label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
-            </p>
-            <p class="acciones"><input type="submit" value="Enviar"></p>
-        </form>
-        <p>{{message}}</p>
-    </div>
-    <div class="columna right">
+            <div class="contactanos">
+                <div class="container text-left d-flex-column">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl icono" style="line-height: 1em;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter fa-xl icono" style="line-height: 1em;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://es-es.facebook.com/"><i class="fa-brands fa-square-facebook fa-xl icono"
+                                    style="line-height: 1em;"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-xl icono" style="line-height: 1em;"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="contactanos">
-            <p><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></p>
-            <p><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></p>
-            <p><a href=""><i class="fa-brands fa-square-facebook fa-xl"></i></i></a></p>
-            <p><a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
+
+            </div>
         </div>
     </div>
 </main>
